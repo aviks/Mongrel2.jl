@@ -7,7 +7,7 @@ Mongrel2.jl is a package that enables writing [Mongrel2] (http://mongrel2.org/) 
 load("pkg")
 Pkg.init() #If not run earlier
 
-Pkg.add("ZMQ")
+Pkg.add("Mongrel2")
 ```
 
 This will also install the dependent Julia packages: [ZMQ] (https://github.com/aviks/ZMQ.jl) and [JSON] (https://github.com/JuliaLang/JSON.jl)
