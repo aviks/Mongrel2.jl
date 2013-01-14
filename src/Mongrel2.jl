@@ -1,6 +1,6 @@
 module Mongrel2
-load("ZMQ")
-load("JSON")
+require("ZMQ")
+require("JSON")
 
 using ZMQ
 
