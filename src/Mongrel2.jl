@@ -128,7 +128,7 @@ function run_server(sender_id, sub_addr, pub_addr)
 		end
 	end
 	print("Julia Mongrel2 hander started, connecting back on [$sub_addr] and [$pub_addr] \n")
-	flush(stdout_stream)
+	#flush(stdout_stream)
 	return Task(runner)
 end
 
