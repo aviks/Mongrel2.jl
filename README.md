@@ -4,9 +4,6 @@ Mongrel2.jl is a package that enables writing [Mongrel2] (http://mongrel2.org/) 
 
 ## Installation
 ```julia
-load("pkg")
-Pkg.init() #If not run earlier
-
 Pkg.add("Mongrel2")
 ```
 
