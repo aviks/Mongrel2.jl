@@ -13,7 +13,7 @@ Install Mongrel2 and ZMQ libraries for your OS using your favourite package mana
 
 ##Usage
 
-Start Mongrel2 in the usual fashion with a relevant configuration. [Example] (https://raw.github.com/aviks/Mongrel2.jl/master/example/mongrel2.config)
+Start Mongrel2 in the usual fashion with `m2sh` using a relevant configuration. [Example] (https://raw.github.com/aviks/Mongrel2.jl/master/example/mongrel2.config)
 
 ```julia
 load("Mongrel2")
