@@ -1,9 +1,9 @@
-module Mongrel2
 require("ZMQ")
 require("JSON")
 
+module Mongrel2
 using ZMQ
-
+import JSON
 
 export M2Request,M2Connection,
 		parse_request, is_disconnected, connect, reply, reply_http, run_server, disconnect_client
