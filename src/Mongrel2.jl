@@ -35,7 +35,7 @@ type M2Connection
 end
 
 function parse_netstring (str::String)
-	 i = strchr(str, ':')
+	 i = search(str, ':')
 	 s = str[i+1:end]
 	 len = int(str[1:i-1])
 	 if s[len+1] != ','; error ("Netstring does not end with comma : $str"); end
@@ -58,7 +58,7 @@ function parse_request(msg::ZMQMessage)
 	rest = r[4]
 	if length(r) > 4
 		for i = r[5:end]
-			rest = strcat(rest, " ", i)
+			rest = string(rest, " ", i)
 		end
 	end
 
@@ -113,7 +113,7 @@ function http_response(body, code, headers::Dict{String, String})
 	headers["Content-Length"] = string(length(body))
 	headers_s = ""
 	for (k, v) = headers
-		headers_s = strcat(headers_s, "$(k): $(v)\r\n")
+		headers_s = string(headers_s, "$(k): $(v)\r\n")
 	end
 	return "HTTP/1.1 $code $(StatusMessage[int(code)])\r\n$(headers_s)\r\n\r\n$(body)"
 end
