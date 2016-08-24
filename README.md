@@ -1,5 +1,7 @@
 #A Julia interface to Mongrel2
 
+>This package is deprecated. The Mongrel2 webserver hasn't turned out to be very popular, and Julia now has a native web server. Therefore, my current reccomendation is to use [HTTPServer](https://github.com/JuliaWeb/HttpServer.jl), fronted by an nginx or Apache2 reverse proxy
+
 Mongrel2.jl is a package that enables writing [Mongrel2] (http://mongrel2.org/) handlers in the [Julia] (http://julialang.org) programming language. 
 
 ## Installation
